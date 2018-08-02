@@ -19,6 +19,12 @@ import { StandOutAgentPage } from "../pages/StandOut/stand-out-agent/stand-out-a
 import { StandOutView1Page } from "../pages/StandOut/stand-out-view1/stand-out-view1";
 import { StandOutView2Page } from "../pages/StandOut/stand-out-view2/stand-out-view2";
 
+//Educo
+import { EducoDatabaseProvider } from "../providers/educo-database/educo-database";
+import { EducoPeriodPage } from "../pages/Educo/educo-period/educo-period";
+import { EducoProfilePage } from "../pages/Educo/educo-profile/educo-profile";
+import { EducoPeriodNewPage } from "../pages/Educo/educo-period-new/educo-period-new";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +39,12 @@ import { StandOutView2Page } from "../pages/StandOut/stand-out-view2/stand-out-v
     StandOutActorProfilePage,
     StandOutAgentPage,
     StandOutView1Page,
-    StandOutView2Page
+    StandOutView2Page,
+
+    // //Educo
+    EducoPeriodNewPage,
+    EducoPeriodPage,
+    EducoProfilePage
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -50,13 +61,23 @@ import { StandOutView2Page } from "../pages/StandOut/stand-out-view2/stand-out-v
     StandOutActorProfilePage,
     StandOutAgentPage,
     StandOutView1Page,
-    StandOutView2Page
+    StandOutView2Page,
+
+    // //Educo
+    EducoPeriodNewPage,
+    EducoPeriodPage,
+    EducoProfilePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
+
+    //Standout
     SMS,
-    { provide: ErrorHandler, useClass: IonicErrorHandler }
+
+    // Educo
+    EducoDatabaseProvider
   ]
 })
 export class AppModule {}

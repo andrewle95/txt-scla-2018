@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu" color="light"></ion-icon>
+    </button>
+    <ion-title color="light">Mrs. Anderson</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!-- other users -->
+  <ion-card class='box1'>
+
+    <div>
+      <ion-row>
+        <ion-col col-6>
+          <div>
+            <ion-item>
+              <ion-avatar item-start>
+                <img class="profileicon" src="assets/educo/imgs/cathy.png">
+              </ion-avatar>
+              <h2>Cathy R.</h2>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div>
+            <button ion-button icon-start clear small class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup"></ion-icon>
+              20 AGREE!
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">Giving homework right off the textbook isn’t challenging enough. </p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- other users -->
+  <ion-card class='box1'>
+
+    <div>
+      <ion-row>
+        <ion-col col-6>
+          <div>
+            <ion-item>
+              <ion-avatar item-start>
+                <img class="profileicon" src="assets/educo/imgs/fernando.png">
+              </ion-avatar>
+              <h2>Richard G.</h2>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div>
+            <button ion-button icon-start clear small class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup"></ion-icon>
+              16 AGREE!
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">It just doesn’t seem appropriate to have the same copies of homework </p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- other users -->
+  <ion-card class='box1'>
+
+    <div>
+      <ion-row>
+        <ion-col col-6>
+          <div>
+            <ion-item>
+              <ion-avatar item-start>
+                <img class="profileicon" src="assets/educo/imgs/jesus.png">
+              </ion-avatar>
+              <h2>Jesus C.</h2>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div>
+            <button ion-button icon-start clear small class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup"></ion-icon>
+              5 AGREE!
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">It just doesn’t seem appropriate to have the same copies of homework </p>
+    </ion-card-content>
+  </ion-card>
+
+
+  <!-- other users -->
+  <ion-card class='box1' *ngFor="let text of texts">
+
+    <div>
+      <ion-row>
+        <ion-col col-6>
+          <div>
+            <ion-item>
+              <ion-avatar item-start>
+                <img class="profileicon" src="assets/educo/imgs/profile2.png">
+              </ion-avatar>
+              <h2>{{user.name}}</h2>
+            </ion-item>
+          </div>
+        </ion-col>
+        <ion-col col-6>
+          <div>
+            <button ion-button icon-start clear small (click)="likePost(text)" class='btn'>
+              <ion-icon ios="ios-arrow-dropup" md="md-arrow-dropup"></ion-icon>
+              {{text.likes}} AGREE!
+            </button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+
+    <ion-card-content>
+      <p class="textmargin">{{ text.text }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- <ion-row>
+      <form>
+        <div>
+          <input id="post" type="text" placeholder="Let's hear your feedback!" [(ngModel)]="newText" [ngModelOptions]="{standalone:true}">
+        </div>
+        <div>
+          <button type="submit" class="postbtn" [value]="btnText" (click)="addPost()">Submit</button>
+        </div>
+      </form>
+    </ion-row> -->
+
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="footer">
+    <form (ngSubmit)="addPost()" id="custom-input">
+      <ion-row style="margin-top: 34px;">
+        <ion-col col-10 class="type">
+          <ion-item class="custom-input">
+            <ion-input type="text" [(ngModel)]="newText" name="title" placeholder="Let's hear your feedback!"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col col-2 class="type">
+          <button ion-button type="submit" block id="custom-btn">
+            <img src="assets/educo/arrow.png" alt="">
+          </button>
+        </ion-col>
+      </ion-row>
+
+
+
+    </form>
+  </ion-toolbar>
+</ion-footer>

@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import { NavController, MenuController } from "ionic-angular";
 import { SimpleStopHomePage } from "../SimpleStop/simple-stop-home/simple-stop-home";
 import { StandOutActorProfilePage } from "../StandOut/stand-out-actor-profile/stand-out-actor-profile";
+import { EducoPeriodPage } from "../Educo/educo-period/educo-period";
 
 @Component({
   selector: "page-home",
@@ -20,6 +21,12 @@ export class HomePage {
       icon: "",
       description: "This app is good",
       component: StandOutActorProfilePage
+    },
+    {
+      title: "Educo",
+      icon: "",
+      description: "This app is good",
+      component: EducoPeriodPage
     }
   ];
 
@@ -34,11 +41,13 @@ export class HomePage {
     this.navCtrl.setRoot(page.component);
   }
 
-  // hiddenBack(){
-  //   this.counter ++;
-  //   console.log('pressed ' + this.counter);
-  //   if (this.counter >= 3){
+  // hiddenCounter = 0;
+
+  // hiddenHome() {
+  //   this.hiddenCounter++;
+  //   if (this.hiddenCounter >= 3) {
   //     this.navCtrl.setRoot(HomePage);
   //   }
+  //   console.log("pressed " + this.hiddenCounter + " times");
   // }
 }

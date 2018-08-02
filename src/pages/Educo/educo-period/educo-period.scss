@@ -1,4 +1,96 @@
-#side-menu {
+page-educo-period {
+  .move {
+    left: 50px;
+  }
+  .inline {
+    display: inline-block;
+    width: 150px;
+  }
+
+  .type {
+    position: initial !important;
+  }
+
+  .scroll-content {
+    padding: 16px 5px 0 5px !important;
+  }
+
+  .content {
+    padding: 16px 5px 0 5px !important;
+  }
+
+  .card {
+    box-shadow: none !important;
+    border-bottom: solid 0.55px rgba(0, 0, 0, 0.5);
+  }
+
+  .textmargin {
+    padding-left: 60px !important;
+  }
+
+  .card-content {
+    padding-top: 0 !important;
+    margin-top: -10px;
+  }
+
+  .custom-input {
+    position: relative;
+  }
+
+  ion-footer {
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+  }
+
+  .footer .toolbar-background {
+    background-color: white !important;
+    border: none !important;
+  }
+
+  .input {
+    margin-bottom: 0 !important;
+  }
+  .type {
+    padding: 0 !important;
+  }
+
+  #custom-btn {
+    background-color: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  #custom-btn img {
+    height: 80%;
+  }
+
+  .footer {
+    padding: 0 0px 5px 3px !important;
+  }
+
+  .box1 .row {
+    height: 60px !important;
+    overflow: hidden;
+  }
+
+  .item-ios {
+    background: transparent !important;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .custom-input {
+    background-color: rgba(196, 196, 196, 0.4) !important;
+    border: solid 0.55px #c7c7c7;
+    margin-bottom: -10px;
+  }
+
   .input {
     bottom: 0%;
     position: fixed;
@@ -15,7 +107,7 @@
   }
 
   .toolbar-background {
-    background-color: #ffbf48;
+    background-color: #660000;
   }
 
   .toolbar-title.toolbar-title-md,
@@ -73,7 +165,7 @@
   }
 
   #profileimg {
-    background-image: "../assets/educo/imgs/profile2.png";
+    background-image: "../assets/imgs/profile2.png";
     border-radius: 20px;
     width: 40px;
     height: 40px;
@@ -138,9 +230,9 @@
     color: black;
   }
 
-  // ion-avatar img {
-  //   display: inline-block;
-  //   vertical-align: middle;
+  // ion-avatar img{
+  //     display: inline-block;
+  //     vertical-align: middle;
   // }
 
   .profileicon {
@@ -261,12 +353,5 @@
     background-color: #ffbf48 !important;
     border-top: solid 0.55px white;
     border-bottom: none !important;
-  }
-
-  .lists {
-    background-color: #ffbf48;
-    border: 0px;
-    border-color: rgba(255, 166, 0, 0);
-    align-items: flex-start;
   }
 }

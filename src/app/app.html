@@ -1,1 +1,52 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<div id="side-menu">
+    <ion-menu [content]="content">
+        <ion-header>
+            <ion-toolbar color="primary" id="sidebar">
+                <ion-row style="margin-top:25px; padding-bottom: 15px; border-bottom: solid thin white">
+                    <button menuClose ion-button id="close-image" (click)="profilePage()">
+                        <img class="menubtn" src="./assets/educo/imgs/profile2.png">
+                    </button>
+                    <h2 style="font-weight: bold; margin-top:15px; padding-bottom: 15px">{{user.name}}</h2>
+                </ion-row>
+            </ion-toolbar>
+
+        </ion-header>
+
+        <ion-content style="background-color: #FFBF48; width:100%; height : 100%" padding>
+
+            <ion-list>
+
+                <button class="lists" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)" floating>
+                    <div class="containter">
+                        <div id="first">
+                            <ion-avatar>
+                                <img id="teacherimg" [src]="p.image">
+                            </ion-avatar>
+                        </div>
+                        <div id="second">
+                            <p style="color: #222;font-weight:bold; font-size:15px;">{{p.title}}</p>
+                            <p style="color: #222;">{{p.className}}</p>
+                            <p style="color: #222; font-weight:300;">{{p.room}}</p>
+                        </div>
+                    </div>
+
+
+                </button>
+
+
+            </ion-list>
+        </ion-content>
+
+        <ion-footer class="custom">
+            <ion-toolbar class="footer custom">
+                <div class="addChannel custom">
+                    <button id="addmenu" ion-button (click)="addMenu()"> Add Channel</button>
+                </div>
+            </ion-toolbar>
+        </ion-footer>
+        <ion-navbar>
+        </ion-navbar>
+    </ion-menu>
+</div>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

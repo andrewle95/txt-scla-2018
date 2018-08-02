@@ -1,4 +1,14 @@
-#side-menu {
+page-educo-profile {
+  .back-button {
+    color: white !important;
+  }
+  .back-button-text {
+    display: none;
+  }
+
+  .savebtn {
+    background-color: #ffbf48 !important;
+  }
   .input {
     bottom: 0%;
     position: fixed;
@@ -15,7 +25,7 @@
   }
 
   .toolbar-background {
-    background-color: #ffbf48;
+    background-color: #660000;
   }
 
   .toolbar-title.toolbar-title-md,
@@ -73,7 +83,7 @@
   }
 
   #profileimg {
-    background-image: "../assets/educo/imgs/profile2.png";
+    background-image: "../assets/imgs/profile2.png";
     border-radius: 20px;
     width: 40px;
     height: 40px;
@@ -138,9 +148,9 @@
     color: black;
   }
 
-  // ion-avatar img {
-  //   display: inline-block;
-  //   vertical-align: middle;
+  // ion-avatar img{
+  //     display: inline-block;
+  //     vertical-align: middle;
   // }
 
   .profileicon {
@@ -262,7 +272,6 @@
     border-top: solid 0.55px white;
     border-bottom: none !important;
   }
-
   .lists {
     background-color: #ffbf48;
     border: 0px;
