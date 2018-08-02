@@ -40,7 +40,6 @@ import { StandOutView2Page } from "../pages/StandOut/stand-out-view2/stand-out-v
   entryComponents: [
     MyApp,
     HomePage,
-    //ScamsApp
 
     //Simple Stop
     SimpleStopHomePage,
