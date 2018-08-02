@@ -1,5 +1,10 @@
 import { Component } from "@angular/core";
-import { IonicPage, NavController, NavParams } from "ionic-angular";
+import {
+  IonicPage,
+  NavController,
+  NavParams,
+  MenuController
+} from "ionic-angular";
 import { EducoDatabaseProvider } from "../../../providers/educo-database/educo-database";
 import { HomePage } from "../../home/home";
 
@@ -19,8 +24,10 @@ export class EducoPeriodPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public database: EducoDatabaseProvider
+    public database: EducoDatabaseProvider,
+    public menu: MenuController
   ) {
+    this.menu.enable(true, "educoMenu");
     this.info = this.navParams.get("info");
     if (this.info != undefined) {
       this.texts = this.info.comments;

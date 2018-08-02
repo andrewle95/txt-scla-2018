@@ -32,7 +32,7 @@ export class HomePage {
 
   constructor(public navCtrl: NavController, public menu: MenuController) {
     console.log(this.projects);
-    // this.menu.enable(false, 'myMenu');
+    this.menu.enable(false, "educoMenu");
   }
 
   openPage(page) {
