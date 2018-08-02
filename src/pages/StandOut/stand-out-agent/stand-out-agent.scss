@@ -1,0 +1,39 @@
+page-stand-out-agent {
+  .toolbar-background {
+    background-color: #ed1c24;
+    color: white !important;
+  }
+  .toolbar-title {
+    color: white !important;
+  }
+  #Pro {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border: red;
+  }
+
+  .profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 3%;
+  }
+  .button-inner {
+    height: 20px;
+    width: 20px;
+    padding: 10px !important;
+  }
+  .pros {
+    border-radius: 50%;
+  }
+  .view {
+    font-size: 40px;
+  }
+  .h2 {
+    color: #ed1c24;
+  }
+  .item {
+    padding-bottom: 30px;
+  }
+}

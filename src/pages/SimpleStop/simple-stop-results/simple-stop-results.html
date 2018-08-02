@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Problem</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 class="title">{{currentItem.title}}</h1>
+  <div class="img-container">
+    <img [src]="currentItem.pic" alt="">
+  </div>
+  <div class="desc">
+    <p>{{currentItem.desc}}</p>
+  </div>
+
+  <ion-grid class="average-cost">
+    <ion-row>
+      <ion-col>
+        <p>Average </p>
+        <p>Cost:</p>
+      </ion-col>
+      <ion-col class="italic">
+        <p>
+          <b>
+            {{currentItem.cost}}
+          </b>
+        </p>
+        <p>
+          <b>
+            {{currentItem.cost2}}
+          </b>
+        </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="ios-home-outline" (click)="home()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Tiffany Thomas </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <img src="assets/stand-out/final-pic/10.jpg" id="TE" height="100px" width="100px">
+  <div class="icons">
+    <button class="icon1">
+      <i class="fas fa-phone"></i>
+    </button>
+    <button class="icon2" (click)="sendSMS()">
+      <i class="fas fa-comment"></i>
+    </button>
+    <button id="Mail">
+      <i class="fas fa-envelope"></i>
+    </button>
+  </div>
+  <ion-list>
+    <ion-item class="input-wrapper" style="margin: 10% 0">
+      <!-- <ion-thumbnail item-start> -->
+      <h3 class="list">Email:</h3>
+      <h3 class="list" id="email">TiffThomas@gmail.com </h3>
+      <!-- </ion-thumbnail> -->
+    </ion-item>
+    <ion-item class="input-wrapper" style="margin: 10% 0">
+      <!-- <ion-thumbnail item-start> -->
+      <h3>Phone Number:</h3>
+      <h3 class="inline">+1-213-139-8945</h3>
+      <!-- </ion-thumbnail> -->
+    </ion-item>
+    <ion-item class="input-wrapper" style="margin: 10% 0">
+      <ion-thumbnail item-start>
+        <h3>Bio:</h3>
+        <h3>I have worked at TalentScout Inc. for about 23 years now and I have signed countless actors to the company and I
+          would be happy to sign you to our company and provide you with the job opportunities that you want.</h3>
+      </ion-thumbnail>
+    </ion-item>
+  </ion-list>
+  <button ion-button id="agentBtn" (click)="viewResume()">Resume</button>
+</ion-content>

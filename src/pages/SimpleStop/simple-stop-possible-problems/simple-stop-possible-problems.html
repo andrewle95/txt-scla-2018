@@ -1,0 +1,38 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Diagnostics</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of items" col-6>
+
+        <div class="car-item" (click)="clickItem(item.id)">
+          <div class="icon-probs" [innerHtml]="item.icon">
+          </div>
+          <div class="title">
+            <p>{{item.title}}</p>
+          </div>
+        </div>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="ios-home-outline" (click)="home()"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-footer>

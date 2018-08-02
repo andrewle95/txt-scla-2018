@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      <img id="logo" (click)="hiddenHome()" src="../assets/simple-stop/imgs/finalLogo.png">
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div id="select-options">
+    <ion-item>
+      <ion-label>Car Brand</ion-label>
+      <ion-select [(ngModel)]="carBrand" #C (ionChange)="onChange(C.value)">
+        <ion-option value="toyota">Toyota</ion-option>
+        <ion-option value="nissan">Nissan</ion-option>
+        <ion-option value="honda" [selected]="honda === carBrand">Honda</ion-option>
+        <ion-option value="mercedes">Mercedes-Benz</ion-option>
+        <ion-option value="hyundai">Hyundai</ion-option>
+
+
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Model of Car</ion-label>
+      <ion-select [(ngModel)]="carModel">
+        <ion-option *ngFor="let model of carModels" [value]="model"> {{ model }} </ion-option>
+        <ion-option value="Civic" [selected]="model == carModel" *ngIf="first">Civic</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Year of Production</ion-label>
+      <ion-select [(ngModel)]="productionYear">
+        <ion-option value="a">2015</ion-option>
+        <ion-option value="b" [selected]="b === productionYear">2016</ion-option>
+        <ion-option value="c">2017</ion-option>
+      </ion-select>
+    </ion-item>
+
+  </div>
+  <button id="submit" ion-button (click)="movePage()"> Submit </button>
+</ion-content>

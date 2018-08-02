@@ -1,14 +1,21 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      SCLA Projects
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <!-- <div *ngFor="let p of projects" (click)="openPage(p)">
+      <p>
+        <img src={{p.icon}} width=50 height=50> {{p.title}}
+      </p>
+      <p>{{p.description}}</p>
+    </div> -->
+    <button ion-item *ngFor="let p of projects" (click)="openPage(p)">
+      {{p.title}}
+    </button>
+  </ion-list>
 </ion-content>

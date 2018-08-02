@@ -1,0 +1,33 @@
+page-stand-out-view2 {
+  #TE {
+    display: block;
+    margin-left: 11em;
+  }
+
+  .list {
+    z-index: -1;
+  }
+  .toolbar-background {
+    background-color: #ed1c24;
+    color: white !important;
+  }
+  .toolbar-title {
+    color: white !important;
+  }
+  ion-header ion-icon.back-button-icon.icon {
+    color: white !important;
+  }
+
+  .back-button {
+    color: white !important;
+  }
+  .contact {
+    display: block;
+    height: 5px;
+    width: 5px;
+    margin-left: 225px;
+    margin-bottom: 13px;
+    border: #fff;
+    background-color: white;
+  }
+}

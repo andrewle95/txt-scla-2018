@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar hideBackButton>
+    <ion-title (click)="hiddenHome()">
+      Actor Profile
+    </ion-title>
+    <ion-buttons end>
+      <button id="finished" [navPush]="AgentPage" [navParams]="params">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="profile-picture-container">
+    <img class="profile-pic" src="assets/stand-out/final-pic/keisha.jpg" alt="{{Base64Image}}">
+  </div>
+
+  <form id="profile-form">
+    <ion-item>
+      <ion-label>Name</ion-label>
+      <ion-input type="text" name="title" placeholder="Tynisha Smith"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="text" name="title" placeholder="tynishaSmith@gmail.com"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Phone</ion-label>
+      <ion-input type="text" name="title" placeholder="310-617-7525"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Bio</ion-label>
+      <ion-input type="text" name="title" placeholder="I am an amateur actor"></ion-input>
+    </ion-item>
+  </form>
+  <!-- <ion-grid>
+      <ion-row>
+        <ion-col >
+            <button ion-button id="picBtn" [navPush]="ResumePage">Resume</button>
+  
+        </ion-col>
+        <ion-col>
+            <button ion-button id="picBtn" [navPush]="AudtionPage">Audtion Tapes</button>
+  
+          </ion-col>
+  
+      </ion-row>
+    </ion-grid> -->
+</ion-content>
+
+
+<span class="back-button-text back-button-text-ios" ng-reflect-klass="back-button-text" ng-reflect-ng-class="back-button-text-ios"
+  style="transform: translateX(0px);"></span>

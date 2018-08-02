@@ -1,0 +1,87 @@
+page-stand-out-actor-profile {
+  #Sister {
+    float: right;
+  }
+  #Brother {
+    float: left;
+  }
+  #Types {
+    float: left;
+  }
+  .Audis {
+    float: right;
+    box-shadow: 10px 5px 5px grey;
+  }
+  #Finished {
+    margin-left: 10px;
+  }
+  .Contin {
+    float: center;
+  }
+
+  .toolbar-background {
+    background-color: #ed1c24;
+    color: white !important;
+  }
+  .toolbar-title {
+    color: white !important;
+  }
+  #finished {
+    color: white !important;
+    background-color: #ed1c24;
+    border: solid thin white;
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+
+  ion-navbar {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .profile-picture-container {
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 35px;
+  }
+  .profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 75%;
+  }
+
+  #picBtn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #ed1c24;
+    padding: 10px 30px !important;
+    font-size: 14px;
+  }
+
+  #profile-form {
+    width: 100%;
+    padding: 0 25px;
+    margin-top: 25px;
+  }
+  ion-item {
+    padding: 0 !important;
+  }
+  .input-wrapper {
+    margin: 5% 0;
+  }
+  .fas fa-chevron-right {
+    font: caption;
+  }
+
+  .text-input {
+    text-align: right;
+  }
+}
