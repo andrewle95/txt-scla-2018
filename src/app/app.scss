@@ -117,8 +117,10 @@
 
   #close-image {
     background-color: #ffbf48;
+    border: none;
   }
-  .toolbar-ios-primary .toolbar-background-ios {
+  .toolbar-ios-primary,
+  .toolbar-background-ios {
     background-color: #ffbf48;
   }
 
@@ -154,6 +156,7 @@
     left: 0%;
     align-content: center;
   }
+
   .profileinfo {
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(164, 164, 164, 0.518);
@@ -182,7 +185,7 @@
 
   .menubtn {
     border-radius: 10px;
-    background-image: "./assets/imgs/profile2.png";
+    background-image: "./assets/educo/imgs/profile2.png";
     width: 47px;
     height: 47px;
   }

@@ -165,7 +165,7 @@ page-educo-period {
   }
 
   #profileimg {
-    background-image: "../assets/imgs/profile2.png";
+    background-image: "../assets/educo/imgs/profile2.png";
     border-radius: 20px;
     width: 40px;
     height: 40px;
@@ -274,7 +274,7 @@ page-educo-period {
 
   .menubtn {
     border-radius: 10px;
-    background-image: "./assets/imgs/profile2.png";
+    background-image: "./assets/educo/imgs/profile2.png";
     width: 47px;
     height: 47px;
   }
@@ -352,6 +352,10 @@ page-educo-period {
   .custom {
     background-color: #ffbf48 !important;
     border-top: solid 0.55px white;
+    border-bottom: none !important;
+  }
+
+  .item {
     border-bottom: none !important;
   }
 }
