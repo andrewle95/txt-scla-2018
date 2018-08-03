@@ -3,6 +3,7 @@ import { IonicPage, NavController } from "ionic-angular";
 import { Geolocation } from "@ionic-native/geolocation";
 import { NorProMainPage } from "../nor-pro-main/nor-pro-main";
 import { NorProContactPage } from "../nor-pro-contact/nor-pro-contact";
+import { HomePage } from "../../home/home";
 
 declare var google: any;
 var markers = [0, 1, 2, 3, 4];
@@ -21,11 +22,18 @@ var markers = [0, 1, 2, 3, 4];
 })
 export class NorProAboutPage {
   public map;
+  hiddenCounter = 0;
   checkFlag = [false, false, false, false];
   @ViewChild("map") mapRef: ElementRef;
 
   constructor(public navCtrl: NavController, public geolocation: Geolocation) {}
-
+  hiddenHome() {
+    this.hiddenCounter++;
+    if (this.hiddenCounter >= 3) {
+      this.navCtrl.setRoot(HomePage);
+    }
+    console.log("pressed " + this.hiddenCounter + " times");
+  }
   yesButt() {
     this.navCtrl.push(NorProContactPage);
   }

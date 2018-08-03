@@ -1,0 +1,23 @@
+page-tunnels-home {
+  ion-content {
+    background-image: url(../assets/tunnels/background.png) !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #Hello {
+    font-size: 75px;
+    text-align: center;
+    padding: 70px 50px;
+    font-family: "Lucida Console", Monospace;
+  }
+  #Start {
+    color: black;
+    padding: 14px 14px;
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background-color: #addcc4;
+    font-family: "Lucida Console", Monospace;
+  }
+}

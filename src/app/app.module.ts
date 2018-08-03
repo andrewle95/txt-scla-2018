@@ -38,6 +38,16 @@ import { VidConnectHomePage } from "../pages/VidConnect/vid-connect-home/vid-con
 import { VidConnectProfilePage } from "../pages/VidConnect/vid-connect-profile/vid-connect-profile";
 import { VidConnectRatingPage } from "../pages/VidConnect/vid-connect-rating/vid-connect-rating";
 
+//Tunnels
+import {
+  DeviceMotion,
+  DeviceMotionAccelerationData
+} from "@ionic-native/device-motion";
+import { ScreenOrientation } from "../../node_modules/@ionic-native/screen-orientation";
+import { TunnelsHomePage } from "../pages/Tunnels/tunnels-home/tunnels-home";
+import { TunnelsGameDonePage } from "../pages/Tunnels/tunnels-game-done/tunnels-game-done";
+import { TunnelsGamePage } from "../pages/Tunnels/tunnels-game/tunnels-game";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -67,7 +77,12 @@ import { VidConnectRatingPage } from "../pages/VidConnect/vid-connect-rating/vid
     //VidConnect
     VidConnectHomePage,
     VidConnectProfilePage,
-    VidConnectRatingPage
+    VidConnectRatingPage,
+
+    //Tunnels
+    TunnelsHomePage,
+    TunnelsGameDonePage,
+    TunnelsGamePage
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -99,7 +114,12 @@ import { VidConnectRatingPage } from "../pages/VidConnect/vid-connect-rating/vid
     //VidConnect
     VidConnectHomePage,
     VidConnectProfilePage,
-    VidConnectRatingPage
+    VidConnectRatingPage,
+
+    //Tunnels
+    TunnelsHomePage,
+    TunnelsGameDonePage,
+    TunnelsGamePage
   ],
   providers: [
     StatusBar,
@@ -114,7 +134,11 @@ import { VidConnectRatingPage } from "../pages/VidConnect/vid-connect-rating/vid
 
     //NorPro
     Geolocation,
-    InAppBrowser
+    InAppBrowser,
+
+    //Tunnels
+    ScreenOrientation,
+    DeviceMotion
   ]
 })
 export class AppModule {}

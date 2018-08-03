@@ -5,6 +5,8 @@ import { StandOutActorProfilePage } from "../StandOut/stand-out-actor-profile/st
 import { EducoPeriodPage } from "../Educo/educo-period/educo-period";
 import { NorProMainPage } from "../NorPro/nor-pro-main/nor-pro-main";
 import { VidConnectHomePage } from "../VidConnect/vid-connect-home/vid-connect-home";
+import { TunnelsHomePage } from "../Tunnels/tunnels-home/tunnels-home";
+import { ScreenOrientation } from "@ionic-native/screen-orientation";
 
 @Component({
   selector: "page-home",
@@ -41,12 +43,25 @@ export class HomePage {
       icon: "",
       description: "This app is good",
       component: VidConnectHomePage
+    },
+    {
+      title: "Tunnels",
+      icon: "",
+      description: "This app is good",
+      component: TunnelsHomePage
     }
   ];
 
-  constructor(public navCtrl: NavController, public menu: MenuController) {
+  constructor(
+    public navCtrl: NavController,
+    public menu: MenuController,
+    public screenOrientation: ScreenOrientation
+  ) {
     console.log(this.projects);
     this.menu.enable(false, "educoMenu");
+    this.screenOrientation.lock(
+      this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY
+    );
   }
 
   openPage(page) {

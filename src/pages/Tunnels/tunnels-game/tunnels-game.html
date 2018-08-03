@@ -1,0 +1,31 @@
+<ion-content>
+  <div class="overlay" *ngIf="startGame2Flag">
+    <h1>You are correct</h1>
+    <button (click)="startGame2()">Next Level</button>
+  </div>
+
+  <div class="overlay" *ngIf="startGame3Flag">
+    <h1>You are correct</h1>
+    <button (click)="startGame3()">Next Level</button>
+  </div>
+
+  <div class="overlay" *ngIf="startGame4Flag">
+    <h1>You are correct</h1>
+    <button (click)="startGame4()">Next Level</button>
+  </div>
+
+  <div class="overlay" *ngIf="startGameDone">
+    <h1>You are correct</h1>
+    <button (click)="gameDone()">Game Done</button>
+  </div>
+
+
+  <div class="overlay" *ngIf="incorrect">
+    <h1>You are incorrect!</h1>
+    <button (click)="restart()">Try Again</button>
+  </div>
+
+
+  <div id="phaser-example"></div>
+
+</ion-content>
