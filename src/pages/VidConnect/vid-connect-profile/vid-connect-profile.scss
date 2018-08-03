@@ -169,4 +169,8 @@ page-vid-connect-profile {
   #margin {
     margin-top: 64px !important;
   }
+
+  .header-md::after {
+    height: 0px;
+  }
 }

@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { IonicPage, NavController, NavParams } from "ionic-angular";
 import { VidConnectProfilePage } from "../vid-connect-profile/vid-connect-profile";
+import { HomePage } from "../../home/home";
 
 @IonicPage()
 @Component({
@@ -9,11 +10,19 @@ import { VidConnectProfilePage } from "../vid-connect-profile/vid-connect-profil
 })
 export class VidConnectHomePage {
   public activeStars = [false, false, false, false, false];
-
+  hiddenCounter = 0;
   constructor(public navCtrl: NavController, public navParams: NavParams) {}
 
   ionViewDidLoad() {
     console.log("ionViewDidLoad VidConnectHomePage");
+  }
+
+  hiddenHome() {
+    this.hiddenCounter++;
+    if (this.hiddenCounter >= 3) {
+      this.navCtrl.setRoot(HomePage);
+    }
+    console.log("pressed " + this.hiddenCounter + " times");
   }
 
   openPage() {
