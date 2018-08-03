@@ -25,6 +25,13 @@ import { EducoPeriodPage } from "../pages/Educo/educo-period/educo-period";
 import { EducoProfilePage } from "../pages/Educo/educo-profile/educo-profile";
 import { EducoPeriodNewPage } from "../pages/Educo/educo-period-new/educo-period-new";
 
+//NorPro
+import { Geolocation } from "@ionic-native/geolocation";
+import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { NorProMainPage } from "../pages/NorPro/nor-pro-main/nor-pro-main";
+import { NorProAboutPage } from "../pages/NorPro/nor-pro-about/nor-pro-about";
+import { NorProContactPage } from "../pages/NorPro/nor-pro-contact/nor-pro-contact";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +51,12 @@ import { EducoPeriodNewPage } from "../pages/Educo/educo-period-new/educo-period
     // //Educo
     EducoPeriodNewPage,
     EducoPeriodPage,
-    EducoProfilePage
+    EducoProfilePage,
+
+    //NorPro
+    NorProMainPage,
+    NorProAboutPage,
+    NorProContactPage
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -66,7 +78,12 @@ import { EducoPeriodNewPage } from "../pages/Educo/educo-period-new/educo-period
     // //Educo
     EducoPeriodNewPage,
     EducoPeriodPage,
-    EducoProfilePage
+    EducoProfilePage,
+
+    //NorPro
+    NorProMainPage,
+    NorProAboutPage,
+    NorProContactPage
   ],
   providers: [
     StatusBar,
@@ -77,7 +94,11 @@ import { EducoPeriodNewPage } from "../pages/Educo/educo-period-new/educo-period
     SMS,
 
     // Educo
-    EducoDatabaseProvider
+    EducoDatabaseProvider,
+
+    //NorPro
+    Geolocation,
+    InAppBrowser
   ]
 })
 export class AppModule {}

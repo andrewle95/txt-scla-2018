@@ -3,6 +3,7 @@ import { NavController, MenuController } from "ionic-angular";
 import { SimpleStopHomePage } from "../SimpleStop/simple-stop-home/simple-stop-home";
 import { StandOutActorProfilePage } from "../StandOut/stand-out-actor-profile/stand-out-actor-profile";
 import { EducoPeriodPage } from "../Educo/educo-period/educo-period";
+import { NorProMainPage } from "../NorPro/nor-pro-main/nor-pro-main";
 
 @Component({
   selector: "page-home",
@@ -27,6 +28,12 @@ export class HomePage {
       icon: "",
       description: "This app is good",
       component: EducoPeriodPage
+    },
+    {
+      title: "NorPro",
+      icon: "",
+      description: "This app is good",
+      component: NorProMainPage
     }
   ];
 

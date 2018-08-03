@@ -1,0 +1,50 @@
+page-nor-pro-main {
+  @import url("https://fonts.googleapis.com/css?family=Roboto:300");
+  body {
+    font-family: "Roboto", sans-serif !important;
+  }
+
+  .toolbar-title.toolbar-title-md,
+  .toolbar-title.toolbar-title-ios,
+  .toolbar-title.toolbar-title-wp {
+    color: white;
+  }
+  ion-content {
+  }
+
+  h1 {
+    color: black;
+  }
+
+  #LOGO1 {
+    margin-top: 130px;
+    font-size: 48px;
+  }
+
+  .Buttons21 {
+    height: 61px;
+    width: 210px;
+    font-size: 48px;
+  }
+
+  #Or1 {
+    font-size: 48px;
+  }
+
+  #customerBut {
+    height: 49.5px;
+    width: 183px;
+    font-size: 36px;
+    border: 3px solid white;
+    background-color: #d92020;
+    color: white;
+    margin-top: 20px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: white white white white;
+  }
+  #signBut {
+    height: 35px;
+    width: 63px;
+  }
+}
