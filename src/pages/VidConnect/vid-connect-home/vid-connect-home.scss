@@ -1,0 +1,37 @@
+page-vid-connect-home {
+    .toolbar-background {
+        background-color: #327bd1
+    }
+    
+    .toolbar-title.toolbar-title-md,
+    .toolbar-title.toolbar-title-ios,
+    .toolbar-title.toolbar-title-wp{ 
+        color:white
+    }
+    .back-button-md,
+    .back-button-ios {
+      color: white ;
+    }
+    body {
+        color: black;
+    }
+    
+    .homeMargin{
+        margin-top:0%;
+    }
+    
+    
+    .toolbar-title-ios{
+        font-family: 'Questrial';
+        font-size: 25px;
+    }
+    
+    h2{
+        font-family: 'Questrial';
+       
+    }
+    
+    p{
+        font-family: 'Questrial';
+    }
+}

@@ -4,6 +4,7 @@ import { SimpleStopHomePage } from "../SimpleStop/simple-stop-home/simple-stop-h
 import { StandOutActorProfilePage } from "../StandOut/stand-out-actor-profile/stand-out-actor-profile";
 import { EducoPeriodPage } from "../Educo/educo-period/educo-period";
 import { NorProMainPage } from "../NorPro/nor-pro-main/nor-pro-main";
+import { VidConnectHomePage } from "../VidConnect/vid-connect-home/vid-connect-home";
 
 @Component({
   selector: "page-home",
@@ -34,6 +35,12 @@ export class HomePage {
       icon: "",
       description: "This app is good",
       component: NorProMainPage
+    },
+    {
+      title: "VidConnect",
+      icon: "",
+      description: "This app is good",
+      component: VidConnectHomePage
     }
   ];
 

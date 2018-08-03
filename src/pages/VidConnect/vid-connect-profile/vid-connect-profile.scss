@@ -1,0 +1,172 @@
+page-vid-connect-profile {
+  .toolbar-background {
+    background-color: #327bd1;
+  }
+
+  .toolbar-title.toolbar-title-md,
+  .toolbar-title.toolbar-title-ios,
+  .toolbar-title.toolbar-title-wp {
+    color: white;
+  }
+  .back-button-md,
+  .back-button-ios {
+    color: white;
+  }
+
+  div.a {
+    text-align: center;
+  }
+
+  #profileContainer {
+    //margin: auto;
+    // background-image: url("../assets/imgs/David.png");
+    text-align: center;
+    margin-top: 35%;
+  }
+  #background {
+    background-image: url("../assets/vid-connect/imgs/profileBG.jpg");
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    margin-top: -20px;
+    float: left;
+  }
+  #FacetimeButton {
+    font-family: "Questrial";
+    font-size: 27px;
+    height: 55px;
+    width: 160px;
+    box-shadow: 0px 3px 5px #9a9a9a;
+  }
+  .stars {
+    width: 200px;
+    height: 80px;
+  }
+
+  .fa-star {
+    text-shadow: 0px 3px 11px #888888;
+  }
+  .dino {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+  }
+
+  .yellow {
+    color: gold;
+  }
+
+  .star-container {
+    //border-bottom: solid thin #9A9a9a;
+    padding-bottom: 10px;
+    margin-bottom: 10px !important;
+    margin-top: -20px !important;
+    padding-top: 0 !important;
+  }
+
+  .star-container * {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    font-size: 18px !important;
+  }
+
+  .grey {
+    color: grey;
+  }
+
+  .david {
+    font-family: "Questrial";
+    //font-weight: bolder;
+    margin-top: 0px !important;
+    color: #327bd1;
+  }
+
+  .sub {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 7%;
+    color: #327bd1;
+  }
+
+  .margin {
+    font-family: "Questrial";
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 0 !important;
+  }
+
+  ion-item {
+    margin: 0 !important;
+  }
+
+  font {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .about {
+    font-family: "Questrial";
+    //font-weight: bolder;
+    color: #327bd1 !important;
+    width: 71%;
+    text-align: left !important;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    vertical-align: top;
+    margin-top: 12px !important;
+    padding-left: 10px;
+    font-size: 17px !important;
+  }
+
+  .email {
+    font-family: "Questrial";
+    //font-weight: bolder;
+    color: #327bd1 !important;
+    width: 71%;
+    text-align: left !important;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+    vertical-align: top;
+    margin-top: 12px !important;
+    padding-left: 15px;
+    font-size: 18px !important;
+  }
+
+  .margin {
+    display: inline-block;
+    vertical-align: top;
+    color: #327bd1 !important;
+  }
+
+  .content {
+    padding: 5px 0 !important;
+  }
+
+  .scroll-content {
+    margin: 0 !important;
+    padding: 5px 0 !important;
+  }
+
+  //.item{
+  //   border-bottom: solid thin #9A9a9a !important;
+  //}
+
+  #profile-header * {
+    background: transparent !important;
+    border: 0px !important;
+    border-bottom-color: transparent !important;
+    background-image: none !important;
+    border-bottom: none !important;
+  }
+
+  #margin {
+    margin-top: 64px !important;
+  }
+}

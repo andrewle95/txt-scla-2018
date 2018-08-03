@@ -32,7 +32,11 @@ import { NorProMainPage } from "../pages/NorPro/nor-pro-main/nor-pro-main";
 import { NorProAboutPage } from "../pages/NorPro/nor-pro-about/nor-pro-about";
 import { NorProContactPage } from "../pages/NorPro/nor-pro-contact/nor-pro-contact";
 
-//Quick Munch
+//VidConnect
+// duplicate import { InAppBrowser } from "@ionic-native/in-app-browser";
+import { VidConnectHomePage } from "../pages/VidConnect/vid-connect-home/vid-connect-home";
+import { VidConnectProfilePage } from "../pages/VidConnect/vid-connect-profile/vid-connect-profile";
+import { VidConnectRatingPage } from "../pages/VidConnect/vid-connect-rating/vid-connect-rating";
 
 @NgModule({
   declarations: [
@@ -58,7 +62,12 @@ import { NorProContactPage } from "../pages/NorPro/nor-pro-contact/nor-pro-conta
     //NorPro
     NorProMainPage,
     NorProAboutPage,
-    NorProContactPage
+    NorProContactPage,
+
+    //VidConnect
+    VidConnectHomePage,
+    VidConnectProfilePage,
+    VidConnectRatingPage
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -85,7 +94,12 @@ import { NorProContactPage } from "../pages/NorPro/nor-pro-contact/nor-pro-conta
     //NorPro
     NorProMainPage,
     NorProAboutPage,
-    NorProContactPage
+    NorProContactPage,
+
+    //VidConnect
+    VidConnectHomePage,
+    VidConnectProfilePage,
+    VidConnectRatingPage
   ],
   providers: [
     StatusBar,

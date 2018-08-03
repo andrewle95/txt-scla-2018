@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title align-center>Vidconnect</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding id="margin">
+
+
+  <h1 align=center style="color:#327BD1 !important; font-family: 'Questrial'; font-size: 40px; font-weight: bolder;"> Teaching Skills: </h1>
+  <div class="stars-container">
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[0], 'far': !activeStars[0]}" (click)="activateStars(1)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[1], 'far': !activeStars[1]}" (click)="activateStars(2)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[2], 'far': !activeStars[2]}" (click)="activateStars(3)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[3], 'far': !activeStars[3]}" (click)="activateStars(4)"></span>
+    <span class="fa-star" [ngClass]="{'fas check': activeStars[4], 'far': !activeStars[4]}" (click)="activateStars(5)"></span>
+
+  </div>
+  <div style="text-align:center;">
+    <button id="SubmitButton" ion-button large color="#327BD1" style="font-family: 'Questrial';" (click)="open()">Submit</button>
+
+  </div>
+</ion-content>
