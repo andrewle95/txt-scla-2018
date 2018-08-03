@@ -32,6 +32,8 @@ import { NorProMainPage } from "../pages/NorPro/nor-pro-main/nor-pro-main";
 import { NorProAboutPage } from "../pages/NorPro/nor-pro-about/nor-pro-about";
 import { NorProContactPage } from "../pages/NorPro/nor-pro-contact/nor-pro-contact";
 
+//Quick Munch
+
 @NgModule({
   declarations: [
     MyApp,
