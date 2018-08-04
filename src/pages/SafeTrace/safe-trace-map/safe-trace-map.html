@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-buttons>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu" class="white"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-title (click)="start()">Map Tracker</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPrompt()">
+        <ion-icon name="md-add" class="white"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+
+</ion-header>
+
+<ion-content padding>
+  <a ion-button id="navigate" href="tel:911">Call 911</a>
+  <div id="map_canvas"></div>
+
+
+</ion-content>

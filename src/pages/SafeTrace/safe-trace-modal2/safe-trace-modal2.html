@@ -1,0 +1,25 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="blue">Settings</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h1 class="miles">Change Phone Number</h1>
+
+  <ion-item style="margin-top:25px;">
+    <ion-label color="primary" fixed>Cell</ion-label>
+    <ion-input type="tel" placeholder="Password Input" [(ngModel)]="num"></ion-input>
+  </ion-item>
+
+  <button ion-button round id="custom-btn" (click)="saveNum()">Save</button>
+</ion-content>

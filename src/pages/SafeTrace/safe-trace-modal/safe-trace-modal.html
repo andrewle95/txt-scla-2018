@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title class="blue">Set Distance</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <h1 class="miles">{{specs.distance}} Miles</h1>
+    <ion-item>
+      <ion-range min="0" max="10" [(ngModel)]="specs.distance" color="secondary" (ionChange)="change()">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>10</ion-label>
+      </ion-range>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

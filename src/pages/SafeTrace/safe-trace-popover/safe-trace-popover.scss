@@ -1,0 +1,41 @@
+page-safe-trace-popover {
+  ion-icon {
+    color: black;
+  }
+
+  #menu {
+    color: #41a9de;
+    text-align: center;
+  }
+
+  .toolbar-background-md {
+    border-color: white;
+    background: white;
+  }
+
+  .header * {
+    box-shadow: transparent !important;
+  }
+
+  .menu-side .item {
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 35px 0;
+    font-size: 26px;
+  }
+
+  .menu-side .item .item-inner {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
+  .label {
+    padding: 5px;
+    height: 35px;
+    vertical-align: middle;
+  }
+  #menu-toolbar .toolbar-background {
+    background-color: white !important;
+    border: none !important;
+  }
+}

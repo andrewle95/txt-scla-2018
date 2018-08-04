@@ -1,5 +1,11 @@
 import { Component, ViewChild } from "@angular/core";
-import { Nav, Platform, AlertController } from "ionic-angular";
+import {
+  Nav,
+  Platform,
+  AlertController,
+  MenuController,
+  ModalController
+} from "ionic-angular";
 import { StatusBar } from "@ionic-native/status-bar";
 import { SplashScreen } from "@ionic-native/splash-screen";
 
@@ -9,6 +15,8 @@ import { HomePage } from "../pages/home/home";
 import { EducoDatabaseProvider } from "../providers/educo-database/educo-database";
 import { EducoProfilePage } from "../pages/Educo/educo-profile/educo-profile";
 import { EducoPeriodNewPage } from "../pages/Educo/educo-period-new/educo-period-new";
+import { SafeTraceModalPage } from "../pages/SafeTrace/safe-trace-modal/safe-trace-modal";
+import { SafeTraceModal2Page } from "../pages/SafeTrace/safe-trace-modal2/safe-trace-modal2";
 @Component({
   templateUrl: "app.html"
 })
@@ -27,7 +35,9 @@ export class MyApp {
     public statusBar: StatusBar,
     public splashScreen: SplashScreen,
     public db: EducoDatabaseProvider,
-    public alertCtrl: AlertController
+    public alertCtrl: AlertController,
+    public menuCtrl: MenuController,
+    public modalCtrl: ModalController
   ) {
     this.initializeApp();
 
@@ -76,6 +86,52 @@ export class MyApp {
       });
       alert.present();
     }
+  }
+
+  //Safe Trace
+  presentPrompt() {
+    let alert = this.alertCtrl.create({
+      title: "Set Distance",
+      inputs: [
+        {
+          name: "Model #",
+          placeholder: "Connection Name"
+        },
+        {
+          name: "Pin",
+          placeholder: "Bracelet #",
+          type: "password"
+        }
+      ],
+      buttons: [
+        {
+          text: "Cancel",
+          role: "cancel",
+          handler: data => {
+            console.log("Cancel clicked");
+          }
+        },
+        {
+          text: "Connect",
+          handler: data => {
+            console.log("you dung did it you goof");
+          }
+        }
+      ]
+    });
+    alert.present();
+  }
+
+  presentModal() {
+    let contactModal = this.modalCtrl.create(SafeTraceModalPage);
+    contactModal.present();
+    this.menuCtrl.close();
+  }
+
+  openSettings() {
+    let contactModal = this.modalCtrl.create(SafeTraceModal2Page);
+    contactModal.present();
+    this.menuCtrl.close();
   }
 }
 

@@ -7,6 +7,8 @@ import { NorProMainPage } from "../NorPro/nor-pro-main/nor-pro-main";
 import { VidConnectHomePage } from "../VidConnect/vid-connect-home/vid-connect-home";
 import { TunnelsHomePage } from "../Tunnels/tunnels-home/tunnels-home";
 import { ScreenOrientation } from "@ionic-native/screen-orientation";
+import { QuickMunchHomePage } from "../QuickMunch/quick-munch-home/quick-munch-home";
+import { SafeTraceMapPage } from "../SafeTrace/safe-trace-map/safe-trace-map";
 
 @Component({
   selector: "page-home",
@@ -49,6 +51,18 @@ export class HomePage {
       icon: "",
       description: "This app is good",
       component: TunnelsHomePage
+    },
+    {
+      title: "Quick Munch",
+      icon: "",
+      description: "This app is good",
+      component: QuickMunchHomePage
+    },
+    {
+      title: "Safe Trace",
+      icon: "",
+      description: "This app is good",
+      component: SafeTraceMapPage
     }
   ];
 
@@ -59,9 +73,10 @@ export class HomePage {
   ) {
     console.log(this.projects);
     this.menu.enable(false, "educoMenu");
-    this.screenOrientation.lock(
-      this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY
-    );
+    this.menu.enable(false, "SafeTraceMenu");
+    // this.screenOrientation.lock(
+    //   this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY
+    // );
   }
 
   openPage(page) {

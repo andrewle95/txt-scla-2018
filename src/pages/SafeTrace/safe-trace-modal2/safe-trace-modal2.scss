@@ -1,0 +1,29 @@
+page-safe-trace-modal2 {
+  #modal {
+    background-color: #41a9de;
+    width: 100%;
+    height: 100%;
+  }
+  .toolbar-background {
+    background: #41a9de;
+  }
+  .toolbar-title {
+    color: white !important;
+  }
+
+  .miles {
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  #custom-btn {
+    display: block;
+    width: 175px;
+    height: 45px;
+    margin: auto;
+    font-size: 23px;
+    margin-top: 30px;
+    background-color: #41a9de !important;
+    text-align: center;
+  }
+}

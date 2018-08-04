@@ -39,14 +39,28 @@ import { VidConnectProfilePage } from "../pages/VidConnect/vid-connect-profile/v
 import { VidConnectRatingPage } from "../pages/VidConnect/vid-connect-rating/vid-connect-rating";
 
 //Tunnels
-import {
-  DeviceMotion,
-  DeviceMotionAccelerationData
-} from "@ionic-native/device-motion";
+import { DeviceMotion } from "@ionic-native/device-motion";
 import { ScreenOrientation } from "../../node_modules/@ionic-native/screen-orientation";
 import { TunnelsHomePage } from "../pages/Tunnels/tunnels-home/tunnels-home";
 import { TunnelsGameDonePage } from "../pages/Tunnels/tunnels-game-done/tunnels-game-done";
 import { TunnelsGamePage } from "../pages/Tunnels/tunnels-game/tunnels-game";
+
+//Quick Munch
+import { LaunchNavigator } from "@ionic-native/launch-navigator";
+import { GoogleMaps } from "@ionic-native/google-maps";
+import { QuickMunchHomePage } from "../pages/QuickMunch/quick-munch-home/quick-munch-home";
+import { QuickMunchModelPage } from "../pages/QuickMunch/quick-munch-model/quick-munch-model";
+import { QuickMunchOrderPage } from "../pages/QuickMunch/quick-munch-order/quick-munch-order";
+import { QuickMunchRatingsPage } from "../pages/QuickMunch/quick-munch-ratings/quick-munch-ratings";
+import { QuickMunchVendorPage } from "../pages/QuickMunch/quick-munch-vendor/quick-munch-vendor";
+
+//SafeTrace
+import { HTTP } from "@ionic-native/http";
+import { SocketProvider } from "../providers/safe-trace-socket/safe-trace-socket";
+import { SafeTraceMapPage } from "../pages/SafeTrace/safe-trace-map/safe-trace-map";
+import { SafeTracePopoverPage } from "../pages/SafeTrace/safe-trace-popover/safe-trace-popover";
+import { SafeTraceModalPage } from "../pages/SafeTrace/safe-trace-modal/safe-trace-modal";
+import { SafeTraceModal2Page } from "../pages/SafeTrace/safe-trace-modal2/safe-trace-modal2";
 
 @NgModule({
   declarations: [
@@ -82,7 +96,20 @@ import { TunnelsGamePage } from "../pages/Tunnels/tunnels-game/tunnels-game";
     //Tunnels
     TunnelsHomePage,
     TunnelsGameDonePage,
-    TunnelsGamePage
+    TunnelsGamePage,
+
+    //Quick Munch
+    QuickMunchHomePage,
+    QuickMunchModelPage,
+    QuickMunchOrderPage,
+    QuickMunchRatingsPage,
+    QuickMunchVendorPage,
+
+    //SafeTrace
+    SafeTraceMapPage,
+    SafeTracePopoverPage,
+    SafeTraceModalPage,
+    SafeTraceModal2Page
   ],
   imports: [BrowserModule, IonicModule.forRoot(MyApp)],
   bootstrap: [IonicApp],
@@ -119,7 +146,20 @@ import { TunnelsGamePage } from "../pages/Tunnels/tunnels-game/tunnels-game";
     //Tunnels
     TunnelsHomePage,
     TunnelsGameDonePage,
-    TunnelsGamePage
+    TunnelsGamePage,
+
+    //Quick Munch
+    QuickMunchHomePage,
+    QuickMunchModelPage,
+    QuickMunchOrderPage,
+    QuickMunchRatingsPage,
+    QuickMunchVendorPage,
+
+    //SafeTrace
+    SafeTraceMapPage,
+    SafeTracePopoverPage,
+    SafeTraceModalPage,
+    SafeTraceModal2Page
   ],
   providers: [
     StatusBar,
@@ -138,7 +178,15 @@ import { TunnelsGamePage } from "../pages/Tunnels/tunnels-game/tunnels-game";
 
     //Tunnels
     ScreenOrientation,
-    DeviceMotion
+    DeviceMotion,
+
+    //Quick Munch
+    GoogleMaps,
+    LaunchNavigator,
+
+    //SafeTrace
+    SocketProvider,
+    HTTP
   ]
 })
 export class AppModule {}

@@ -1,0 +1,97 @@
+page-safe-trace-map {
+  ion-icon {
+    color: black;
+  }
+
+  #menu {
+    color: #41a9de;
+    text-align: center;
+  }
+
+  .toolbar-background-md {
+    border-color: white;
+    background: white;
+  }
+
+  .header * {
+    box-shadow: transparent !important;
+  }
+
+  .menu-side .item {
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 35px 0;
+    font-size: 26px;
+  }
+
+  .menu-side .item .item-inner {
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+
+  .label {
+    padding: 5px;
+    height: 35px;
+    vertical-align: middle;
+  }
+  #menu-toolbar .toolbar-background {
+    background-color: white !important;
+    border: none !important;
+  }
+  #map_canvas {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  ion-content,
+  .scroll-content {
+    padding: 0 !important;
+  }
+  .Maptrk {
+    position: relative;
+  }
+  .Margin {
+    align-content: 200px;
+  }
+  .PlusB {
+    position: absolute;
+    left: 300px;
+    background: transparent !important;
+    color: #41a9de;
+  }
+  .color {
+    color: #41a9de;
+  }
+  .MAAP {
+    text-decoration-color: #ffffff !important;
+    color: #ffffff !important;
+    text-align: center;
+    text-emphasis-color: #ffffff !important;
+  }
+  .toolbar-background {
+    background-color: #41a9de !important;
+  }
+  .toolbar-title {
+    color: #ffffff !important;
+    text-decoration-color: #ffffff !important;
+    text-emphasis-color: #ffffff !important;
+  }
+  .white {
+    color: white !important;
+  }
+  #navigate {
+    display: block;
+    position: absolute;
+    z-index: 999999;
+    height: 95px;
+    width: 95px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 18px;
+    background-color: red;
+    border: solid 3px white;
+  }
+}
